@@ -1,0 +1,418 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+}
+
+h1{
+    font-family: "Newsreader", serif;
+    font-weight: 700;
+    color: white;
+}
+/* nav bar  */
+
+nav{
+    margin: 1rem 4rem;
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 0.8rem;  
+    font-weight: 600;
+    color: #ffffffee;
+}
+
+nav a:hover{
+    color: green;
+}
+
+.navBar{
+    background-color: #2bcfa3;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo{
+    padding: 1.5rem;
+    width: 10%
+}
+
+.borderProfile{
+    margin-top: 19px;
+    margin-right: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    position: relative;
+    float: right;
+    
+} 
+
+.image{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}  
+
+.image img{
+    border-radius: 100%;
+    width: 100%;
+} 
+
+/* Header  */
+
+.header{
+    background-color: #2bcfa3;
+    width: 100%;
+    padding: 2rem 0 50%;
+
+}
+
+.sideImage{
+    position: absolute;
+    width: 24.3%;
+    left: 6.7rem;
+    
+}
+
+.content{
+    width: 50%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 9.5rem;
+}
+
+.text{
+    margin-top: 0;
+    width: 70%;
+    color: #f8eeeece;
+    font-weight: lighter;
+}
+
+/* cards  */
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    border: 3px none;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display:inline-block;
+    width: 22%;
+    margin: 5%;
+    margin-left: 0;
+    padding: 3%;
+}
+
+.cardImg{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 58%;
+    height: 50px;
+    margin-top: 1rem;
+}
+
+.cardImg img{
+    width: 100%;
+}
+
+
+.card h1{
+    margin-block: 0;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:#32B57D;
+}
+
+.card p{
+    margin-top: 0; 
+    font-weight: 600;
+    font-size: 0.6rem;
+    color: #E9788F;
+}
+
+.card ul{
+    margin-top: 3rem;
+    padding-left: 0;
+    font-size: 0.5rem;  
+    font-weight: 600;
+    color: #8d8a8afd;
+    list-style: none;
+}
+
+.card ul li{
+    text-align: left;
+    padding-bottom: 0.4rem;
+}
+
+.card ul li span{
+    float: right;
+}
+
+.cardBtn{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translateX(-50%);
+    background-color: #01E969;
+    border-radius: 5px;
+    border-style: none;
+    width: 50%;
+    height: 30px;
+    font-size: 0.62rem;
+    font-weight: 600;
+    color:#303030;
+    cursor: pointer;
+}
+
+.cardBtn:hover{
+    background-color: rgb(0, 163, 95);
+}
+
+/* recipes   */
+
+.recipes{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 5rem 0 7rem 0;
+    padding-bottom: 3%;
+    text-align: center;
+    
+}
+
+.recipesContent{
+    padding: 0 15% 3%;
+}
+
+.recipesContent h1{
+    color: black;
+}
+
+.recipesContent p{
+    color: rgb(65, 65, 65);
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 0.9rem
+
+}
+
+.carousel{
+    margin-left: 2rem;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carouselImage{
+    width: 100%;
+    height: 22.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+
+.arrowImg{
+    width: 30%;
+    /* background-color: white; */
+}
+
+/* GO GREEN  */
+
+.goGreen{
+    width: 100%;
+    padding: 7rem 0 15rem;
+    background-color: rgb(249, 249, 249);
+    overflow: hidden;
+    
+}
+
+.pepper{
+    position: absolute;
+    width: 20rem;
+    left: 4rem;
+    top: 89rem;
+    
+}
+
+.goContainer{
+    margin-top: 5rem;
+    margin-right: 5rem;
+    float: right;
+    width: 55%;
+    z-index: 10;
+}
+
+
+
+.goSlideContent{
+   width: 100%;
+   margin-left: 0;
+   margin-right: 4rem;
+   padding-right: 3%;
+   
+}
+
+.goSlideContent h1{
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+    
+}
+.goSlideContent p{
+    font-size:0.8rem;
+    font-weight: 500; 
+}
+
+.brand1, .brand3{
+    width: 10%;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    
+}
+
+.brand2{
+    width: 8%;
+    margin-left: 1.5rem;
+    display: inline-block;
+}
+
+/* HOW IT WORKS  */
+
+.howWorks{
+    width:100%;
+    padding: 7% 0 6%;
+    background-color: #2bcfa3;
+   
+}
+
+.hwSlide{
+    width: 55rem;
+    margin-left: 9rem;
+    
+}
+
+.fruitSlide{
+    display: inline-block;
+    width: 48%;
+    
+}
+
+.fruitSlide img{
+    display: inline-block;
+    vertical-align:middle;
+    border-radius: 5px;
+}
+
+.hwContent{
+    display: inline-block;
+    width: 48%;
+    padding-left: 2rem;
+    vertical-align:middle;  
+}
+
+.hwContent h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hwContent p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.7;
+}
+
+ /* EXPERIMENT  */
+
+.experiment{
+    /* width:100%; */
+    padding: 5rem 7% 6rem 7%;
+    background-color: #FFF;
+}
+
+.experimentContent{
+    display:inline-block;
+    width: 47%;
+    /* margin-left: 3rem; */
+    vertical-align: top;
+    
+}
+
+.experimentText h1{
+    margin-block: 0;
+    color: #00A35E;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.experimentText p{
+    font-family: "Newsreader", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #4D5753;
+    width: 70%;
+}
+
+.experiment-btn{
+    margin-top: 1rem;
+    background-color: #01E969;
+    border-radius: 8px;
+    border-style: none;
+    width: 18%;
+    height: 2rem;
+    font-size: 0.62rem;
+    font-weight: 600;
+    color:#303030;
+    cursor: pointer;
+}
+
+.download{
+    margin-top: 8rem;
+}
+
+.download p{
+    margin-block: 0;
+    margin-bottom: 0.5em;
+    font-size: 0.9rem;
+}
+
+.iosImg{
+    display:inline-block;
+    width: 14%;
+    margin-bottom: 0.43rem;
+}
+
+.androidImg{
+    display: inline-block;
+    width: 18%;
+}
+
+.greyImg{
+    display: inline-block;
+    width: 47%;
+    height: 33rem;
+    margin-left: 3.5rem;
+    background-color: #F2F2F2;
+}
+
+
+
