@@ -5,6 +5,7 @@
 /11_Frontend
 /.pnp
 .pnp.js
+.gitignore
 
 # testing
 /coverage
