@@ -6,7 +6,7 @@ function NavBar(){
 
             <img className="logo" src="./images/logo.png" alt="logo"/>
 
-            <nav>
+            <nav className="navHeader">
                 <a href="/">Recipes</a>
                 <a href="/">Go Green</a>
                 <a href="/">Pricing</a>

@@ -11,7 +11,7 @@ h1{
 }
 /* nav bar  */
 
-nav{
+.navHeader{
     margin: 1rem 4rem;
     display: inline-block;
     position: absolute;
@@ -19,7 +19,7 @@ nav{
     right: 1rem;
 }
 
-nav a{
+.navHeader a{
     text-decoration: none;
     margin-right: 2rem;
     font-size: 0.8rem;  
@@ -27,7 +27,7 @@ nav a{
     color: #ffffffee;
 }
 
-nav a:hover{
+.navHeader a:hover{
     color: green;
 }
 
@@ -39,7 +39,7 @@ nav a:hover{
 
 .logo{
     padding: 1.5rem;
-    width: 10%
+    width: 154px;
 }
 
 .borderProfile{
@@ -56,13 +56,12 @@ nav a:hover{
 
 .image{
     border-radius: 100%;
-    width: 40px;
+    width: 43px;
     height: 40px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 46%;
     transform: translate(-50%, -50%);
-
 }  
 
 .image img{
@@ -414,5 +413,81 @@ nav a:hover{
     background-color: #F2F2F2;
 }
 
+/* footer  */
+
+.footer{
+    padding: 4rem 10% 5rem 10%;
+    background-color: #3B3B3B;
+}
+
+.navFooter{
+    display: inline-block;
+}
+
+.navFooter a{
+    text-decoration: none;
+    margin-right: 2.5rem;
+    font-size: 0.8rem;  
+    font-weight: 600;
+    color: #D6D6D6;
+}
+
+.mellowLogo{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    top: 0.5rem;
+    left: 30rem;
+}
+
+.footerText{
+    margin-top: 5rem;
+}
+
+.footerText h1{
+    margin-block: 0;
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.greenH1{
+    color: #00E886;
+}
 
 
+.subscribe{
+    margin-top: 2.5rem;
+}
+
+.subscribe input{
+    width: 20%;
+    height: 1rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-radius: 5px 0 0 5px;
+    border-style: none;
+    font-size: 0.6rem;
+}
+
+.subscribe button{
+    margin-left: 0.3rem;
+    background-color: #01E969;
+    border-radius: 0 8px 8px 0;
+    border-style: none;
+    width: 9%;
+    height: 2rem;
+    font-size: 0.62rem;
+    font-weight: 600;
+    color:#303030;
+    cursor: pointer;
+}
+
+.socialLogo{
+    margin-top: 3rem;
+
+}
+.socialLogo p{
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    color: #fff;
+}

@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 function GoGreenSlide({title, content}){
     return(
         <div className="goSlideContent">

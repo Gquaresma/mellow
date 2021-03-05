@@ -8,10 +8,11 @@ import SliderContent from "./SliderContent";
 import Slide from "./Slide";
 import GoGreenSlide from "./GoGreenSlide";
 import HowWorksSlide from "./HowWorksSlide";
+
 import Arrow from "./Arrow";
 import GoGreenArrow from "./GoGreenArrow";
 
-function Carousel(props){
+function Slider(props){
 
     const [state, setState] = useState({
         activeIndex: 0,
@@ -21,7 +22,7 @@ function Carousel(props){
 
     const {activeIndex, translate, transition} = state;
     
-    let section = props.minhaQueridaVariavelInvariavel;
+    let section = props.section;
     let length, variableWidth, slideItem;
 
     if(section === "Recipes"){
@@ -50,7 +51,7 @@ function Carousel(props){
                 })
             }
         }
-        else if(section === "GoGreen"){
+        else if(section === "GoGreen" || section === "HowItWorks"){
             if(activeIndex === slideItem + 1){
                 return setState({
                     ...state,
@@ -60,7 +61,6 @@ function Carousel(props){
             }
         }
         
-
         setState({
             ...state,
             activeIndex: activeIndex + slideItem,
@@ -115,22 +115,18 @@ function Carousel(props){
                         })
                     )}
                     
-                
-                    
                 </SliderContent>
 
-                {(section === "Recipes" || section === "HowItWorks") ?
-                    (<div>
-                        <Arrow direction="left" handleClick={prevSlide} />
-                        <Arrow direction="right" handleClick={nextSlide} />
-                    </div>
+                {(section === "Recipes" || section === "HowItWorks") ? (
+                        <div>
+                            <Arrow direction="left" handleClick={prevSlide} />
+                            <Arrow direction="right" handleClick={nextSlide} />
+                        </div>
                     ) : null
                 }
 
                 {(section === "GoGreen") && <GoGreenArrow direction="right" handleClick={nextSlide} />}
                 
-
-           
             </div>
         </div>
         
@@ -138,4 +134,4 @@ function Carousel(props){
     );
 }
 
-export default Carousel;
+export default Slider;

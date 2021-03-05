@@ -4,7 +4,7 @@ import Slider from "./Slider"
 function HowWorks(){
     return (
         <div className="howWorks">
-            <Slider minhaQueridaVariavelInvariavel="HowItWorks"/>
+            <Slider section="HowItWorks"/>
             
         </div>
     )

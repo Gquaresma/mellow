@@ -8,9 +8,9 @@ function Gogreen(){
 
             <div className="goContainer">
                 <div className="goGreenContent">
-                    <Slider minhaQueridaVariavelInvariavel="GoGreen"/>
+                    <Slider section="GoGreen"/>
 
-                    <div clasName="brandNames">
+                    <div className="brandNames">
                         <img className="brand1" src="./images/logo1.png" alt="brand"/>
                         <img className="brand2" src="./images/logo2.png" alt="brand"/>
                         <img className="brand3" src="./images/logo3.png" alt="brand"/>

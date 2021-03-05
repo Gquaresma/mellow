@@ -7,8 +7,6 @@ function HowWorksSlide({title, image, content}){
                 <img src={image} alt="fruit"/>
             </div>
             
-            
-
             <div className="hwContent">
                 <h1>{title}</h1>
                 <p>{content}</p>
