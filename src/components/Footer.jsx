@@ -2,7 +2,7 @@ import React from "react"
 import {FaFacebookF, FaTwitter, FaInstagram, FaPinterest} from "react-icons/fa"
 
 function Footer(){
-    let iconStyles = {color: "#fff", marginRight: "1.8rem", fontSize: "1rem"}
+    let iconStyles = {color: "#fff", marginRight: "1.8rem", fontSize: "1rem", cursor:"pointer"}
 
     return(
         <footer className="footer">

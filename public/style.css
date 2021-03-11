@@ -9,32 +9,54 @@ h1{
     font-weight: 700;
     color: white;
 }
+
 /* nav bar  */
+
+.navBar{
+    background-color: #2bcfa3;
+    width: 100%;
+}
 
 .navHeader{
     margin: 1rem 4rem;
     display: inline-block;
     position: absolute;
-    top: 1rem;
     right: 1rem;
+}
+
+.navHeader ul{
+    list-style: none;
+}
+
+.navHeader ul li{
+    display: inline-block;
+    margin-right: 2rem;
 }
 
 .navHeader a{
     text-decoration: none;
-    margin-right: 2rem;
     font-size: 0.8rem;  
     font-weight: 600;
-    color: #ffffffee;
+    color: #D9F6EE;
 }
 
 .navHeader a:hover{
-    color: green;
+    color: rgb(0, 128, 90);
+    transition: .5s;
 }
 
-.navBar{
-    background-color: #2bcfa3;
-    display: inline-block;
-    width: 100%;
+.checkBtn{
+    color: #D9F6EE;
+    font-size: 2rem;
+    margin-left: 5rem;
+    position: absolute;
+    top: 2rem;
+    cursor:pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 .logo{
@@ -74,22 +96,24 @@ h1{
 .header{
     background-color: #2bcfa3;
     width: 100%;
-    padding: 2rem 0 50%;
-
+    height: 100vh;
+    padding-top: 2rem ;
 }
 
 .sideImage{
     position: absolute;
-    width: 24.3%;
-    left: 6.7rem;
-    
+    width: 25%;
+    left: 4rem;   
 }
 
 .content{
-    width: 50%;
+    position: relative;
+    width: 60%;
     float: right;
+    right: 2rem;
     margin-top: 3%;
-    margin-right: 9.5rem;
+    /* padding: 1% 6%; */
+    /* margin-right: 9.5rem; */
 }
 
 .text{
@@ -101,6 +125,7 @@ h1{
 
 /* cards  */
 
+
 .card{
     background-color: white;
     border-radius: 10px;
@@ -108,7 +133,8 @@ h1{
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
     position: relative;
     display:inline-block;
-    width: 22%;
+    margin-top:0;
+    width: 18%;
     margin: 5%;
     margin-left: 0;
     padding: 3%;
@@ -118,15 +144,16 @@ h1{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 58%;
-    height: 50px;
+    width: 56%;
+    height: 60px;
     margin-top: 1rem;
 }
-
-.cardImg img{
-    width: 100%;
+.img1, .img2{
+    width: 80px;
 }
-
+.img3{
+    width: 90px;
+}
 
 .card h1{
     margin-block: 0;
@@ -179,6 +206,7 @@ h1{
 
 .cardBtn:hover{
     background-color: rgb(0, 163, 95);
+    transition: .5s;
 }
 
 /* recipes   */
@@ -251,14 +279,13 @@ h1{
 }
 
 .goContainer{
+    position: relative;
     margin-top: 5rem;
     margin-right: 5rem;
     float: right;
     width: 55%;
-    z-index: 10;
+    z-index: 1;
 }
-
-
 
 .goSlideContent{
    width: 100%;
@@ -272,23 +299,22 @@ h1{
     font-weight: 600;
     font-size: 2rem;
     color: black;
-    
 }
+
 .goSlideContent p{
     font-size:0.8rem;
     font-weight: 500; 
 }
 
 .brand1, .brand3{
-    width: 10%;
+    width: 90px;
     display: inline-block;
     margin-right: 1rem;
-    margin-left: 2rem;
-    
+    margin-left: 2rem; 
 }
 
 .brand2{
-    width: 8%;
+    width: 70px;
     margin-left: 1.5rem;
     display: inline-block;
 }
@@ -297,7 +323,7 @@ h1{
 
 .howWorks{
     width:100%;
-    padding: 7% 0 6%;
+    padding: 7% 0 6% 0;
     background-color: #2bcfa3;
    
 }
@@ -311,7 +337,6 @@ h1{
 .fruitSlide{
     display: inline-block;
     width: 48%;
-    
 }
 
 .fruitSlide img{
@@ -349,10 +374,9 @@ h1{
 
 .experimentContent{
     display:inline-block;
-    width: 47%;
-    /* margin-left: 3rem; */
+    width: 45%;
+    margin-right: 5%;
     vertical-align: top;
-    
 }
 
 .experimentText h1{
@@ -368,7 +392,7 @@ h1{
     font-weight: 500;
     font-size: 1rem;
     color: #4D5753;
-    width: 70%;
+    width: 6remlato;
 }
 
 .experiment-btn{
@@ -376,7 +400,7 @@ h1{
     background-color: #01E969;
     border-radius: 8px;
     border-style: none;
-    width: 18%;
+    width: 23%;
     height: 2rem;
     font-size: 0.62rem;
     font-weight: 600;
@@ -396,20 +420,21 @@ h1{
 
 .iosImg{
     display:inline-block;
-    width: 14%;
-    margin-bottom: 0.43rem;
+    width: 60px;
+    margin-bottom: 0.23rem;
+    
 }
 
 .androidImg{
     display: inline-block;
-    width: 18%;
+    width: 70px;
+    
 }
 
 .greyImg{
     display: inline-block;
     width: 47%;
     height: 33rem;
-    margin-left: 3.5rem;
     background-color: #F2F2F2;
 }
 
@@ -418,10 +443,12 @@ h1{
 .footer{
     padding: 4rem 10% 5rem 10%;
     background-color: #3B3B3B;
+    position: relative;
 }
 
 .navFooter{
     display: inline-block;
+    width: 60%;
 }
 
 .navFooter a{
@@ -434,10 +461,10 @@ h1{
 
 .mellowLogo{
     display: inline-block;
-    position: relative;
+    position: absolute;
     width: 120px;
-    top: 0.5rem;
-    left: 30rem;
+    top: 3.5rem;
+    right: 6%;
 }
 
 .footerText{
@@ -490,4 +517,115 @@ h1{
     margin-top: 1rem;
     font-size: 0.5rem;
     color: #fff;
+}
+
+/* QUERIES  */
+
+@media (max-width: 1020px){
+    .header{
+        padding-bottom: 13rem;
+    }
+    .sideImage{
+        width: 40%;
+        left: 1rem;
+    }
+
+    .card{
+        width: 30%;
+    }
+
+    .pepper{
+        top: 103rem;
+    }
+}
+
+@media(max-width: 920px){
+    .checkBtn{
+        right: 5.5rem;
+        display: block;
+    }
+
+    .navHeader ul{
+		position: fixed;
+		width: 23%;
+		height: 25vh;
+		background: rgba(90,236,212, 0.8);
+		top: 68px;
+        right: -100%;
+		transition: all .5s;
+        z-index: 1;
+	}
+	.navHeader ul li{
+		display: block;
+		margin: 9px 0;
+	}
+
+    .navHeader ul li a{
+        color: rgb(123, 139, 137);
+    }
+
+    #check:checked ~ .navHeader ul{
+        right: 1%;
+    }
+
+    .header{
+        background-color: rgba(43, 207, 163, 0.8);
+        padding-bottom: 35rem;
+    }
+
+    .sideImage{
+        z-index: -1;
+        width: 350px;
+        left: -1rem;
+        background-color: rgba(43, 207, 163, 0.8);
+    }
+
+    .card{
+        display: block;
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+    .pepper{
+        width: 20rem;
+        top: 130rem;
+    }
+
+    .fruitSlide{
+        display: none;
+    }
+
+    .hwContent{
+        width: 20%;
+        margin-left: 1rem;
+    }
+
+    .experiment-btn{
+        width: 40%;
+    }
+
+    .mellowLogo{
+        top: 4.5rem;
+        width: 100px;
+    }
+
+    .navFooter a{
+        display: block;
+        margin-top: 1rem;
+        /* font-size: 0.6rem; */
+    }
+
+    .subscribe input {
+        width: 70%;
+        height: 1.3rem;
+        border-radius: 5px 5px 5px 5px;
+        display: block;
+    }
+
+    .subscribe button{
+        width: 50%;
+        margin-top: 0.5rem;
+        border-radius: 5px 5px 5px 5px;
+    }
+
 }

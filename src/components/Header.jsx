@@ -14,12 +14,16 @@ function Header(){
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                 </div>
 
+                
                 <div className="plan">
                     {cardPlan.map((card, index) => {
                         return <Cards key={card.id} id={index + 1} img={card.img} options={card.options} />
                     })}
                 
                 </div>
+            
+
+                
 
             </div>
 
